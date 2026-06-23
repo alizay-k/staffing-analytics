@@ -1,0 +1,101 @@
+client_id,client_name,industry,client_country,contract_start,monthly_retainer
+1,Client_001,Finance,United Kingdom,2022-03-23,10141.43
+2,Client_002,Retail,United States,2022-03-28,3991.49
+3,Client_003,Manufacturing,United States,2022-05-24,12030.94
+4,Client_004,Finance,UAE,2022-03-09,9645.12
+5,Client_005,Retail,United Kingdom,2022-04-18,8731.49
+6,Client_006,Retail,United Kingdom,2022-10-14,10811.1
+7,Client_007,Retail,United Kingdom,2022-08-10,9413.92
+8,Client_008,Healthcare,Australia,2022-11-03,5418.91
+9,Client_009,Technology,United Kingdom,2022-07-16,10554.3
+10,Client_010,Manufacturing,United States,2022-09-23,11365.74
+11,Client_011,Manufacturing,United States,2022-02-06,6954.74
+12,Client_012,Manufacturing,Australia,2022-07-13,2191.23
+13,Client_013,Healthcare,Canada,2022-09-17,6852.34
+14,Client_014,Retail,United Kingdom,2022-01-30,5191.06
+15,Client_015,Healthcare,United Kingdom,2022-07-04,6895.85
+16,Client_016,Finance,Canada,2022-04-01,6107.72
+17,Client_017,Technology,Australia,2022-07-16,9975.51
+18,Client_018,Technology,United States,2022-04-20,6148.35
+19,Client_019,Manufacturing,Australia,2022-10-07,9987.88
+20,Client_020,Technology,Australia,2022-09-21,11876.04
+21,Client_021,Manufacturing,Canada,2022-01-16,8828.7
+22,Client_022,Technology,United Kingdom,2022-08-24,3293.01
+23,Client_023,Manufacturing,United States,2022-04-15,11151.88
+24,Client_024,Technology,United States,2022-07-31,8647.4
+25,Client_025,Manufacturing,UAE,2022-10-13,10610.48
+26,Client_026,Finance,UAE,2022-05-20,4722.46
+27,Client_027,Retail,United States,2022-02-27,12925.37
+28,Client_028,Healthcare,Canada,2023-01-01,11240.94
+29,Client_029,Retail,Canada,2022-04-19,13231.88
+30,Client_030,Healthcare,United Kingdom,2022-10-28,2987.0
+31,Client_031,Manufacturing,United Kingdom,2022-06-05,5028.16
+32,Client_032,Finance,United States,2022-01-24,12024.81
+33,Client_033,Retail,Australia,2022-09-07,6282.85
+34,Client_034,Retail,Australia,2022-05-14,4295.49
+35,Client_035,Manufacturing,United Kingdom,2022-10-12,11870.15
+36,Client_036,Technology,United Kingdom,2022-09-27,13026.97
+37,Client_037,Retail,UAE,2022-08-25,4159.71
+38,Client_038,Technology,United States,2022-02-23,3599.55
+39,Client_039,Retail,UAE,2022-11-13,10992.79
+40,Client_040,Finance,Canada,2022-01-04,4823.65
+41,Client_041,Healthcare,United States,2022-02-24,3728.1
+42,Client_042,Retail,Australia,2022-02-28,7821.01
+43,Client_043,Technology,UAE,2022-04-01,11142.26
+44,Client_044,Healthcare,Canada,2022-06-11,8836.48
+45,Client_045,Manufacturing,United Kingdom,2022-02-10,8929.81
+46,Client_046,Manufacturing,United States,2022-01-13,7388.57
+47,Client_047,Technology,UAE,2022-03-01,6953.71
+48,Client_048,Healthcare,Canada,2022-03-27,13398.62
+49,Client_049,Technology,Australia,2022-10-18,3337.99
+50,Client_050,Manufacturing,UAE,2022-04-26,3259.23
+51,Client_051,Technology,United Kingdom,2022-02-05,7975.89
+52,Client_052,Healthcare,UAE,2022-02-02,4931.53
+53,Client_053,Healthcare,United States,2022-04-10,9061.84
+54,Client_054,Technology,United Kingdom,2022-04-21,10612.56
+55,Client_055,Technology,United States,2022-01-16,13057.43
+56,Client_056,Manufacturing,United Kingdom,2022-11-02,6052.57
+57,Client_057,Technology,UAE,2022-07-18,10009.7
+58,Client_058,Technology,United States,2022-07-26,2466.11
+59,Client_059,Retail,Canada,2022-03-15,13628.28
+60,Client_060,Healthcare,United Kingdom,2022-11-20,11658.89
+61,Client_061,Finance,United Kingdom,2022-12-23,11269.05
+62,Client_062,Manufacturing,United Kingdom,2022-08-11,11565.67
+63,Client_063,Healthcare,UAE,2022-04-28,5132.71
+64,Client_064,Healthcare,UAE,2022-01-14,3456.45
+65,Client_065,Retail,United States,2022-08-04,3716.61
+66,Client_066,Technology,United Kingdom,2022-06-09,12960.08
+67,Client_067,Manufacturing,UAE,2022-07-13,14198.7
+68,Client_068,Retail,United States,2022-01-19,13420.32
+69,Client_069,Finance,United Kingdom,2022-06-23,3306.43
+70,Client_070,Healthcare,United States,2022-01-16,9691.87
+71,Client_071,Retail,United States,2022-01-29,13244.34
+72,Client_072,Manufacturing,United States,2022-05-31,14681.03
+73,Client_073,Retail,UAE,2022-02-17,10290.43
+74,Client_074,Healthcare,UAE,2022-10-18,10212.96
+75,Client_075,Retail,Canada,2022-06-22,5105.18
+76,Client_076,Manufacturing,United Kingdom,2022-04-24,12339.64
+77,Client_077,Healthcare,Australia,2022-07-05,8246.7
+78,Client_078,Healthcare,United States,2022-11-06,3315.33
+79,Client_079,Finance,Australia,2022-01-10,11133.42
+80,Client_080,Technology,Australia,2022-06-02,3325.63
+81,Client_081,Healthcare,Canada,2022-09-07,6687.54
+82,Client_082,Technology,UAE,2022-08-09,8753.7
+83,Client_083,Technology,UAE,2022-07-20,6715.4
+84,Client_084,Technology,United States,2022-10-23,5323.77
+85,Client_085,Finance,UAE,2022-09-19,11315.93
+86,Client_086,Finance,Canada,2022-05-28,10356.83
+87,Client_087,Technology,United Kingdom,2022-09-15,3372.16
+88,Client_088,Manufacturing,United Kingdom,2022-03-13,4776.92
+89,Client_089,Technology,United Kingdom,2022-07-12,14707.99
+90,Client_090,Technology,Australia,2022-09-25,9118.11
+91,Client_091,Manufacturing,United Kingdom,2022-07-27,11673.68
+92,Client_092,Manufacturing,United Kingdom,2022-09-07,11953.28
+93,Client_093,Technology,Canada,2022-06-25,3559.8
+94,Client_094,Manufacturing,United States,2022-07-19,12591.82
+95,Client_095,Retail,Canada,2022-11-21,6606.15
+96,Client_096,Technology,UAE,2022-07-25,3223.87
+97,Client_097,Retail,United States,2022-12-05,3889.77
+98,Client_098,Manufacturing,UAE,2022-04-11,11533.79
+99,Client_099,Retail,UAE,2022-08-06,8993.11
+100,Client_100,Manufacturing,Canada,2022-03-26,2132.05
