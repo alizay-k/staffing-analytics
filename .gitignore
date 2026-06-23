@@ -1,0 +1,18 @@
+# dbt credentials — never push
+profiles.yml
+~/.dbt/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# dbt auto-generated folder
+dbt/staffing_dbt/target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Power BI — too large for GitHub
+*.pbix
