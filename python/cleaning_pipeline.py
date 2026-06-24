@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("placements_messy.csv")
+df=pd.read_csv("data/raw/placements_messy.csv")
 
 print("=== Before Cleaning ===")
 print(f"shape:{df.shape}")
@@ -85,7 +85,7 @@ print(f"Missing values:\n{df.isnull().sum()}")
 print(f"Duplicates: {df.duplicated().sum()}")
 
 # Save clean file
-df.to_csv("placements_clean.csv", index=False)
+df.to_csv("data/clean/placements_clean.csv", index=False)
 
 print("=== ROI Analysis===")
 overall_avg=df["days_to_fill"].mean()
