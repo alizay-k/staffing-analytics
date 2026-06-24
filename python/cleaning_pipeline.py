@@ -84,6 +84,32 @@ print(f"Shape: {df.shape}")
 print(f"Missing values:\n{df.isnull().sum()}")
 print(f"Duplicates: {df.duplicated().sum()}")
 
+# Creating new columns
+df['daily_rate']=(df["placement_fee"]/df["days_to_fill"]).round(2)
+print("\nDaily rate column added:")
+print(df[['placement_fee',
+          'days_to_fill',
+          'daily_rate']].head())
+
+avg_days=df["days_to_fill"].mean()
+df['is_fast_fill']=df["days_to_fill"]<avg_days
+print(f"\nAverage days to fill: {avg_days:.1f}")
+print(f"Fast fills: {df['is_fast_fill'].sum()}")
+print(f"Slow fills: {(~df['is_fast_fill']).sum()}")
+
+def categorize_fee(fee):
+    if fee < 2000:
+        return 'Low'
+    elif fee <5000:
+        return 'Medium'
+    else:
+        return 'High'
+    
+df['fee_category']=df["placement_fee"].apply(categorize_fee)
+print("\nFee categories:")
+print(df['fee_category'].value_counts())
+
+
 # Save clean file
 df.to_csv("data/clean/placements_clean.csv", index=False)
 
@@ -126,28 +152,77 @@ for pct in [0.05, 0.08, 0.10, 0.15]:
     print(f"If we shift {pct:.0%}: {volume} placements → ${saving:,.0f} saving")
 
 
-# # # Creating new columns
-# df['Daily_rate']=(df["placement_fee"]/df["days_to_fill"]).round(2)
-# print("\nDaily rate column added:")
-# print(df[['placement_fee',
-#           'days_to_fill',
-#           'daily_rate']].head())
 
-# avg_days=df["days_to_fill"].mean()
-# df['is_fast_fill']=df["days_to_fill"]<avg_days
-# print(f"\nAverage days to fill: {avg_days:.1f}")
-# print(f"Fast fills: {df['is_fast_fill'].sum()}")
-# print(f"Slow fills: {(~df['is_fast_fill']).sum()}")
+# Load clients and recruiters clean files
+clients = pd.read_csv("data/clean/clients_clean.csv")
+recruiters = pd.read_csv(
+    "data/clean/recruiters_clean.csv"
+)
 
-# def categorize_fee(fee):
-#     if fee < 2000:
-#         return 'Low'
-#     elif fee <5000:
-#         return 'Medium'
-#     else:
-#         return 'High'
-    
-# df['fee_category']=df["placement_fee"].apply(categorize_fee)
-# print("\nFee categories:")
-# print(df['fee_category'].value_counts())
+print("\nBefore merge:")
+print(f"Placements: {len(df)} rows, {len(df.columns)} cols")
+print(f"Clients: {len(clients)} rows")
+print(f"Recruiters: {len(recruiters)} rows")
 
+# Step 1: merge placements with clients
+df_merged = pd.merge(
+    df,
+    clients[['client_id', 'client_name', 'industry']],
+    on='client_id',
+    how='left'
+)
+
+# Step 2: merge result with recruiters
+df_merged = pd.merge(
+    df_merged,
+    recruiters[['recruiter_id',
+                 'recruiter_name',
+                 'seniority']],
+    on='recruiter_id',
+    how='left'
+)
+
+print("\nAfter merge:")
+print(f"Merged: {len(df_merged)} rows, "
+      f"{len(df_merged.columns)} cols")
+print(f"\nNew columns added: "
+      f"{set(df_merged.columns) - set(df.columns)}")
+print(f"\nSample of merged data:")
+print(df_merged[['placement_fee',
+                  'client_name',
+                  'recruiter_name',
+                  'candidate_country']].head())
+
+# Verify no placements lost in merge
+assert len(df_merged) == len(df), \
+    "Merge lost rows — check for duplicate keys"
+print("\n✅ Row count verified — no placements lost")
+
+# ── SKILL 8: EXPORT ──────────────────────────────────
+
+# Save clean placements (your main cleaned file)
+df.to_csv("data/clean/placements_clean.csv",
+          index=False)
+print("\nSaved: data/clean/placements_clean.csv")
+print(f"Rows: {len(df)}, Columns: {len(df.columns)}")
+
+# Save merged file (all three tables combined)
+df_merged.to_csv(
+    "data/clean/placements_merged.csv",
+    index=False
+)
+print("\nSaved: data/clean/placements_merged.csv")
+print(f"Rows: {len(df_merged)}, "
+      f"Columns: {len(df_merged.columns)}")
+
+# Final summary
+print("\n" + "="*40)
+print("PIPELINE COMPLETE")
+print("="*40)
+print(f"Input rows (messy):  5023")
+print(f"Output rows (clean): {len(df)}")
+print(f"Rows removed:        {5023 - len(df)}")
+print(f"Columns in clean:    {len(df.columns)}")
+print(f"Columns in merged:   {len(df_merged.columns)}")
+print(f"New columns added:   "
+      f"daily_rate, is_fast_fill, fee_category")
