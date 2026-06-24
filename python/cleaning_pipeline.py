@@ -126,7 +126,7 @@ for pct in [0.05, 0.08, 0.10, 0.15]:
     print(f"If we shift {pct:.0%}: {volume} placements → ${saving:,.0f} saving")
 
 
-# # Creating new columns
+# # # Creating new columns
 # df['Daily_rate']=(df["placement_fee"]/df["days_to_fill"]).round(2)
 # print("\nDaily rate column added:")
 # print(df[['placement_fee',
@@ -151,4 +151,3 @@ for pct in [0.05, 0.08, 0.10, 0.15]:
 # print("\nFee categories:")
 # print(df['fee_category'].value_counts())
 
-# #

@@ -56,7 +56,7 @@ company_names = [
 # Realistic recruiter names
 first_names = [
     "Sarah", "James", "Aisha", "Omar", "Chen",
-    "Fatima", "David", "Priya", "Mohammed", "Emma",
+    "Fatima", "David", "Priya", "Emma",
     "Carlos", "Zara", "Ahmed", "Lisa", "Raj"
 ]
 last_names = [
