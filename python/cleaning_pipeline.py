@@ -124,3 +124,31 @@ for pct in [0.05, 0.08, 0.10, 0.15]:
     volume = int(non_pak_placements * pct)
     saving = volume * days_saved * cost_per_day
     print(f"If we shift {pct:.0%}: {volume} placements → ${saving:,.0f} saving")
+
+
+# # Creating new columns
+# df['Daily_rate']=(df["placement_fee"]/df["days_to_fill"]).round(2)
+# print("\nDaily rate column added:")
+# print(df[['placement_fee',
+#           'days_to_fill',
+#           'daily_rate']].head())
+
+# avg_days=df["days_to_fill"].mean()
+# df['is_fast_fill']=df["days_to_fill"]<avg_days
+# print(f"\nAverage days to fill: {avg_days:.1f}")
+# print(f"Fast fills: {df['is_fast_fill'].sum()}")
+# print(f"Slow fills: {(~df['is_fast_fill']).sum()}")
+
+# def categorize_fee(fee):
+#     if fee < 2000:
+#         return 'Low'
+#     elif fee <5000:
+#         return 'Medium'
+#     else:
+#         return 'High'
+    
+# df['fee_category']=df["placement_fee"].apply(categorize_fee)
+# print("\nFee categories:")
+# print(df['fee_category'].value_counts())
+
+# #

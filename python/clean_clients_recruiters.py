@@ -1,6 +1,6 @@
 import pandas as pd
 
-clients = pd.read_csv("clients.csv")
+clients = pd.read_csv("data/raw/clients.csv")
 
 print("=== CLIENTS BEFORE ===")
 print(f"Shape: {clients.shape}")
@@ -25,10 +25,10 @@ print("\n=== CLIENTS AFTER ===")
 print(f"Shape: {clients.shape}")
 print(f"Missing values:\n{clients.isnull().sum()}")
 
-clients.to_csv("clients_clean.csv", index=False)
+clients.to_csv("data/clean/clients_clean.csv", index=False)
 print("Saved to data/clean/clients_clean.csv")
 
-recruiters = pd.read_csv("recruiters.csv")
+recruiters = pd.read_csv("data/raw/recruiters.csv")
 
 print("=== RECRUITERS BEFORE ===")
 print(f"Shape: {recruiters.shape}")
@@ -53,5 +53,5 @@ print("\n=== RECRUITERS AFTER ===")
 print(f"Shape: {recruiters.shape}")
 print(f"Missing values:\n{recruiters.isnull().sum()}")
 
-recruiters.to_csv("recruiters_clean.csv", index=False)
+recruiters.to_csv("data/clean/recruiters_clean.csv", index=False)
 print("Saved to data/clean/recruiters_clean.csv")

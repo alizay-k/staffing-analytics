@@ -1,101 +1,101 @@
 client_id,client_name,industry,client_country,contract_start,monthly_retainer
-1,Client_001,Finance,United Kingdom,2022-03-23,10141.43
-2,Client_002,Retail,United States,2022-03-28,3991.49
-3,Client_003,Manufacturing,United States,2022-05-24,12030.94
-4,Client_004,Finance,UAE,2022-03-09,9645.12
-5,Client_005,Retail,United Kingdom,2022-04-18,8731.49
-6,Client_006,Retail,United Kingdom,2022-10-14,10811.1
-7,Client_007,Retail,United Kingdom,2022-08-10,9413.92
-8,Client_008,Healthcare,Australia,2022-11-03,5418.91
-9,Client_009,Technology,United Kingdom,2022-07-16,10554.3
-10,Client_010,Manufacturing,United States,2022-09-23,11365.74
-11,Client_011,Manufacturing,United States,2022-02-06,6954.74
-12,Client_012,Manufacturing,Australia,2022-07-13,2191.23
-13,Client_013,Healthcare,Canada,2022-09-17,6852.34
-14,Client_014,Retail,United Kingdom,2022-01-30,5191.06
-15,Client_015,Healthcare,United Kingdom,2022-07-04,6895.85
-16,Client_016,Finance,Canada,2022-04-01,6107.72
-17,Client_017,Technology,Australia,2022-07-16,9975.51
-18,Client_018,Technology,United States,2022-04-20,6148.35
-19,Client_019,Manufacturing,Australia,2022-10-07,9987.88
-20,Client_020,Technology,Australia,2022-09-21,11876.04
-21,Client_021,Manufacturing,Canada,2022-01-16,8828.7
-22,Client_022,Technology,United Kingdom,2022-08-24,3293.01
-23,Client_023,Manufacturing,United States,2022-04-15,11151.88
-24,Client_024,Technology,United States,2022-07-31,8647.4
-25,Client_025,Manufacturing,UAE,2022-10-13,10610.48
-26,Client_026,Finance,UAE,2022-05-20,4722.46
-27,Client_027,Retail,United States,2022-02-27,12925.37
-28,Client_028,Healthcare,Canada,2023-01-01,11240.94
-29,Client_029,Retail,Canada,2022-04-19,13231.88
-30,Client_030,Healthcare,United Kingdom,2022-10-28,2987.0
-31,Client_031,Manufacturing,United Kingdom,2022-06-05,5028.16
-32,Client_032,Finance,United States,2022-01-24,12024.81
-33,Client_033,Retail,Australia,2022-09-07,6282.85
-34,Client_034,Retail,Australia,2022-05-14,4295.49
-35,Client_035,Manufacturing,United Kingdom,2022-10-12,11870.15
-36,Client_036,Technology,United Kingdom,2022-09-27,13026.97
-37,Client_037,Retail,UAE,2022-08-25,4159.71
-38,Client_038,Technology,United States,2022-02-23,3599.55
-39,Client_039,Retail,UAE,2022-11-13,10992.79
-40,Client_040,Finance,Canada,2022-01-04,4823.65
-41,Client_041,Healthcare,United States,2022-02-24,3728.1
-42,Client_042,Retail,Australia,2022-02-28,7821.01
-43,Client_043,Technology,UAE,2022-04-01,11142.26
-44,Client_044,Healthcare,Canada,2022-06-11,8836.48
-45,Client_045,Manufacturing,United Kingdom,2022-02-10,8929.81
-46,Client_046,Manufacturing,United States,2022-01-13,7388.57
-47,Client_047,Technology,UAE,2022-03-01,6953.71
-48,Client_048,Healthcare,Canada,2022-03-27,13398.62
-49,Client_049,Technology,Australia,2022-10-18,3337.99
-50,Client_050,Manufacturing,UAE,2022-04-26,3259.23
-51,Client_051,Technology,United Kingdom,2022-02-05,7975.89
-52,Client_052,Healthcare,UAE,2022-02-02,4931.53
-53,Client_053,Healthcare,United States,2022-04-10,9061.84
-54,Client_054,Technology,United Kingdom,2022-04-21,10612.56
-55,Client_055,Technology,United States,2022-01-16,13057.43
-56,Client_056,Manufacturing,United Kingdom,2022-11-02,6052.57
-57,Client_057,Technology,UAE,2022-07-18,10009.7
-58,Client_058,Technology,United States,2022-07-26,2466.11
-59,Client_059,Retail,Canada,2022-03-15,13628.28
-60,Client_060,Healthcare,United Kingdom,2022-11-20,11658.89
-61,Client_061,Finance,United Kingdom,2022-12-23,11269.05
-62,Client_062,Manufacturing,United Kingdom,2022-08-11,11565.67
-63,Client_063,Healthcare,UAE,2022-04-28,5132.71
-64,Client_064,Healthcare,UAE,2022-01-14,3456.45
-65,Client_065,Retail,United States,2022-08-04,3716.61
-66,Client_066,Technology,United Kingdom,2022-06-09,12960.08
-67,Client_067,Manufacturing,UAE,2022-07-13,14198.7
-68,Client_068,Retail,United States,2022-01-19,13420.32
-69,Client_069,Finance,United Kingdom,2022-06-23,3306.43
-70,Client_070,Healthcare,United States,2022-01-16,9691.87
-71,Client_071,Retail,United States,2022-01-29,13244.34
-72,Client_072,Manufacturing,United States,2022-05-31,14681.03
-73,Client_073,Retail,UAE,2022-02-17,10290.43
-74,Client_074,Healthcare,UAE,2022-10-18,10212.96
-75,Client_075,Retail,Canada,2022-06-22,5105.18
-76,Client_076,Manufacturing,United Kingdom,2022-04-24,12339.64
-77,Client_077,Healthcare,Australia,2022-07-05,8246.7
-78,Client_078,Healthcare,United States,2022-11-06,3315.33
-79,Client_079,Finance,Australia,2022-01-10,11133.42
-80,Client_080,Technology,Australia,2022-06-02,3325.63
-81,Client_081,Healthcare,Canada,2022-09-07,6687.54
-82,Client_082,Technology,UAE,2022-08-09,8753.7
-83,Client_083,Technology,UAE,2022-07-20,6715.4
-84,Client_084,Technology,United States,2022-10-23,5323.77
-85,Client_085,Finance,UAE,2022-09-19,11315.93
-86,Client_086,Finance,Canada,2022-05-28,10356.83
-87,Client_087,Technology,United Kingdom,2022-09-15,3372.16
-88,Client_088,Manufacturing,United Kingdom,2022-03-13,4776.92
-89,Client_089,Technology,United Kingdom,2022-07-12,14707.99
-90,Client_090,Technology,Australia,2022-09-25,9118.11
-91,Client_091,Manufacturing,United Kingdom,2022-07-27,11673.68
-92,Client_092,Manufacturing,United Kingdom,2022-09-07,11953.28
-93,Client_093,Technology,Canada,2022-06-25,3559.8
-94,Client_094,Manufacturing,United States,2022-07-19,12591.82
-95,Client_095,Retail,Canada,2022-11-21,6606.15
-96,Client_096,Technology,UAE,2022-07-25,3223.87
-97,Client_097,Retail,United States,2022-12-05,3889.77
-98,Client_098,Manufacturing,UAE,2022-04-11,11533.79
-99,Client_099,Retail,UAE,2022-08-06,8993.11
-100,Client_100,Manufacturing,Canada,2022-03-26,2132.05
+1,CoreHire Solutions 1,Finance,United States,2022-11-27,8327.37
+2,TrueNorth Staffing 2,Retail,UAE,2022-05-28,6318.28
+3,GlobalStaff Partners 3,Finance,Canada,2022-03-21,14211.3
+4,GlobalStaff Partners 4,Technology,Australia,2022-12-03,4671.67
+5,EliteForce Staffing 5,Retail,UAE,2022-12-13,5494.76
+6,GlobalStaff Partners 6,Manufacturing,Australia,2022-12-18,11539.37
+7,PeakHire Group 7,Healthcare,Australia,2022-01-30,7818.38
+8,PrimePath Staffing 8,Retail,United Kingdom,2022-08-10,9413.92
+9,TrueNorth Staffing 9,Healthcare,Australia,2022-11-03,5418.91
+10,PeakHire Group 10,Technology,Canada,2022-12-03,13035.84
+11,NexGen Recruitment 11,Manufacturing,United States,2022-11-12,3831.56
+12,SwiftTalent Agency 12,Healthcare,Australia,2022-09-22,14999.09
+13,SwiftTalent Agency 13,Technology,UAE,2022-12-22,4412.03
+14,PrimePath Staffing 14,Finance,Canada,2022-02-24,11752.6
+15,NexGen Recruitment 15,Retail,United States,2022-11-21,2162.07
+16,SwiftTalent Agency 16,Manufacturing,UAE,2022-11-30,14395.04
+17,TrueNorth Staffing 17,Retail,United States,2022-06-11,10145.14
+18,BrightForce Group 18,Manufacturing,Canada,2022-11-11,5901.07
+19,GlobalStaff Partners 19,Healthcare,UAE,2022-03-28,9112.51
+20,PrimePath Staffing 20,Manufacturing,Australia,2022-12-12,12316.76
+21,TalentBridge Solutions 21,Manufacturing,Australia,2022-09-23,14167.76
+22,TrueNorth Staffing 22,Technology,Australia,2022-02-05,3192.91
+23,BlueStar Recruitment 23,Technology,Canada,2022-02-20,5670.47
+24,ClearPath Hiring 24,Healthcare,United States,2022-12-27,7203.3
+25,NexGen Recruitment 25,Retail,Australia,2022-01-16,8598.71
+26,ProLink HR 26,Manufacturing,Australia,2022-05-27,5393.92
+27,TrueNorth Staffing 27,Finance,United States,2022-09-07,3746.3
+28,PeakHire Group 28,Healthcare,United States,2022-08-09,13165.48
+29,ClearPath Hiring 29,Retail,Canada,2022-08-02,4761.38
+30,PrimePath Staffing 30,Healthcare,United Kingdom,2022-10-28,2987.0
+31,BlueStar Recruitment 31,Manufacturing,United Kingdom,2022-06-05,5028.16
+32,BlueStar Recruitment 32,Finance,United States,2022-01-24,12024.81
+33,CoreHire Solutions 33,Manufacturing,Canada,2022-06-18,14461.2
+34,SwiftTalent Agency 34,Manufacturing,UAE,2022-04-01,3524.18
+35,PeakHire Group 35,Manufacturing,United Kingdom,2022-02-03,12539.56
+36,RapidHire Partners 36,Retail,UAE,2022-08-25,4159.71
+37,PeakHire Group 37,Healthcare,United Kingdom,2022-03-04,4073.36
+38,SwiftTalent Agency 38,Finance,Australia,2022-12-21,7729.95
+39,SwiftTalent Agency 39,Technology,United States,2022-01-30,3704.89
+40,NexGen Recruitment 40,Technology,United States,2022-02-06,8361.18
+41,PeakHire Group 41,Retail,United Kingdom,2022-06-07,4310.54
+42,NexGen Recruitment 42,Healthcare,Canada,2022-06-11,8836.48
+43,PrimePath Staffing 43,Technology,United Kingdom,2022-09-30,6127.05
+44,TrueNorth Staffing 44,Healthcare,United Kingdom,2022-08-01,4842.39
+45,RapidHire Partners 45,Finance,United Kingdom,2022-07-15,6472.91
+46,RapidHire Partners 46,Retail,United States,2022-07-22,3162.6
+47,BlueStar Recruitment 47,Manufacturing,United Kingdom,2022-01-05,9472.33
+48,NexGen Recruitment 48,Technology,United Kingdom,2022-01-10,14656.45
+49,RapidHire Partners 49,Technology,Canada,2022-11-05,10564.55
+50,GlobalStaff Partners 50,Finance,United Kingdom,2022-04-26,7160.45
+51,BrightForce Group 51,Healthcare,United States,2022-04-10,9061.84
+52,TalentBridge Solutions 52,Technology,United States,2022-12-06,7834.17
+53,TalentBridge Solutions 53,Healthcare,United Kingdom,2022-10-17,10484.76
+54,PrimePath Staffing 54,Technology,Australia,2022-06-09,2063.51
+55,RapidHire Partners 55,Finance,Canada,2022-11-12,7037.7
+56,RapidHire Partners 56,Healthcare,Canada,2022-01-19,14163.73
+57,CoreHire Solutions 57,Healthcare,Canada,2022-03-22,2472.25
+58,ClearPath Hiring 58,Finance,UAE,2022-01-25,11049.41
+59,ApexRecruit Ltd 59,Manufacturing,United Kingdom,2022-08-11,11565.67
+60,BlueStar Recruitment 60,Healthcare,UAE,2022-04-28,5132.71
+61,NexGen Recruitment 61,Finance,United Kingdom,2022-02-27,14411.34
+62,ClearPath Hiring 62,Healthcare,Canada,2022-03-09,6230.96
+63,PeakHire Group 63,Technology,UAE,2022-10-23,5537.38
+64,PeakHire Group 64,Retail,United States,2022-01-19,13420.32
+65,ProLink HR 65,Technology,UAE,2022-02-21,4690.22
+66,BrightForce Group 66,Healthcare,United Kingdom,2022-10-30,7145.48
+67,NexGen Recruitment 67,Technology,Australia,2022-03-18,5814.41
+68,TalentBridge Solutions 68,Retail,UAE,2022-02-17,10290.43
+69,NexGen Recruitment 69,Finance,Australia,2022-11-20,10843.57
+70,SwiftTalent Agency 70,Finance,United States,2022-05-02,9325.04
+71,NexGen Recruitment 71,Retail,United States,2022-12-05,14743.91
+72,ProLink HR 72,Retail,UAE,2022-04-13,4876.71
+73,PeakHire Group 73,Manufacturing,UAE,2022-09-16,2252.63
+74,TalentBridge Solutions 74,Technology,Australia,2022-06-02,3325.63
+75,GlobalStaff Partners 75,Retail,Canada,2022-07-04,2569.39
+76,ClearPath Hiring 76,Finance,Canada,2022-09-23,5135.19
+77,PeakHire Group 77,Finance,Canada,2022-07-05,2070.71
+78,RapidHire Partners 78,Technology,United States,2022-10-23,5323.77
+79,BrightForce Group 79,Finance,UAE,2022-09-19,11315.93
+80,ClearPath Hiring 80,Finance,Canada,2022-05-28,10356.83
+81,TalentBridge Solutions 81,Technology,Australia,2022-02-24,11916.1
+82,BlueStar Recruitment 82,Manufacturing,United Kingdom,2022-03-13,4776.92
+83,TalentBridge Solutions 83,Technology,Canada,2022-06-28,3367.09
+84,PrimePath Staffing 84,Manufacturing,Australia,2022-01-04,7277.58
+85,TalentBridge Solutions 85,Manufacturing,United Kingdom,2022-09-07,11953.28
+86,TalentBridge Solutions 86,Retail,UAE,2022-03-03,13948.82
+87,ClearPath Hiring 87,Manufacturing,United States,2022-07-19,12591.82
+88,CoreHire Solutions 88,Retail,UAE,2022-01-11,5647.33
+89,PeakHire Group 89,Retail,United States,2022-12-05,3889.77
+90,BrightForce Group 90,Manufacturing,UAE,2022-04-11,11533.79
+91,BrightForce Group 91,Retail,UAE,2022-08-06,8993.11
+92,ClearPath Hiring 92,Manufacturing,Canada,2022-03-26,2132.05
+93,BlueStar Recruitment 93,Technology,UAE,2022-10-12,14728.03
+94,PeakHire Group 94,Technology,United States,2022-07-16,12178.93
+95,ProLink HR 95,Healthcare,UAE,2022-09-07,6895.73
+96,EliteForce Staffing 96,Technology,UAE,2022-05-30,12207.53
+97,ClearPath Hiring 97,Retail,United Kingdom,2022-12-18,13789.43
+98,BlueStar Recruitment 98,Retail,UAE,2022-06-22,4832.48
+99,RapidHire Partners 99,Finance,UAE,2022-10-25,6786.64
+100,TalentBridge Solutions 100,Manufacturing,United Kingdom,2022-01-26,3886.92
