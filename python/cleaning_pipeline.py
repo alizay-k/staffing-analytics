@@ -94,7 +94,7 @@ print(df[['placement_fee',
           'daily_rate']].head())
 
 avg_days=df["days_to_fill"].mean()
-df['is_fast_fill']=df["days_to_fill"]<avg_days
+df['is_fast_fill']=df["days_to_fill"] < avg_days
 print(f"\nAverage days to fill: {avg_days:.1f}")
 print(f"Fast fills: {df['is_fast_fill'].sum()}")
 print(f"Slow fills: {(~df['is_fast_fill']).sum()}")
@@ -114,45 +114,6 @@ print(df['fee_category'].value_counts())
 
 # Save clean file
 df.to_csv("data/clean/placements_clean.csv", index=False)
-
-print("=== ROI Analysis===")
-overall_avg=df["days_to_fill"].mean()
-
-pak_avg=df[df["candidate_country"]=="Pakistan"]["days_to_fill"].mean()
-
-days_saved=overall_avg-pak_avg
-avg_fee=df["placement_fee"].mean()
-cost_per_day=avg_fee/overall_avg
-
-total_placements=len(df)
-pak_placements=len(df[df["candidate_country"]=="Pakistan"])
-pak_pct=pak_placements/total_placements
-
-# Current state
-print(f"Total placements: {total_placements}")
-print(f"Pakistan current share: {pak_pct:.1%}")
-print(f"Pakistan current placements: {pak_placements}")
-
-# The opportunity is placements NOT currently in Pakistan
-non_pak_placements = total_placements - pak_placements
-shift_volume = int(non_pak_placements * 0.08)
-
-# Saving from shifting those placements
-annual_saving = shift_volume * days_saved * cost_per_day
-
-print(f"\nNon-Pakistan placements: {non_pak_placements}")
-print(f"8% of non-Pakistan shifted: {shift_volume}")
-print(f"Days saved per placement: {days_saved:.1f}")
-print(f"Cost per day: ${cost_per_day:.2f}")
-print(f"Revised annual saving: ${annual_saving:,.0f}")
-
-# Sensitivity check — what if we're wrong about cost per day?
-print("=== Sensitivity Analysis ===")
-for pct in [0.05, 0.08, 0.10, 0.15]:
-    volume = int(non_pak_placements * pct)
-    saving = volume * days_saved * cost_per_day
-    print(f"If we shift {pct:.0%}: {volume} placements → ${saving:,.0f} saving")
-
 
 
 # Load clients and recruiters clean files
