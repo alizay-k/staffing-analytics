@@ -32,14 +32,22 @@ that duplicate rows could skew median calculation.*
    Need clean titles before filling missing fees or the 
    median would be calculated on too-small groups.
 
-4. **Missing fees fourth** — depends on clean job titles 
-   from step 3. Fill with median by job title, not overall 
-   median, because Senior roles have very different fee 
-   ranges than Junior roles.
+4. **Duplicates fourth** — remove BEFORE filling missing 
+   fees. Reason: duplicate rows could skew the median 
+   calculation used for fee imputation. Even for exact 
+   duplicates, deduplicating first is the safer 
+   professional practice — in real data, near-duplicates 
+   (same placement recorded twice with slightly different 
+   values) would inflate or deflate the median if not 
+   removed first. Caught and fixed during self-review.
 
-5. **Duplicates last** — remove after all standardization 
-   so we catch duplicates that were previously hidden by 
-   inconsistent formatting.
+5. **Missing fees fifth** — filled AFTER deduplication 
+   so median is calculated on unique records only. 
+   Used median by job title group, not overall median, 
+   because Senior roles ($3,000-$8,000) have very 
+   different fee ranges than Junior roles ($1,000-$4,000). 
+   Using overall median would under-impute Senior fees 
+   and over-impute Junior fees.
 
 ## What I Did Not Fix
 - `client_id` and `recruiter_id` — both clean, no action needed
