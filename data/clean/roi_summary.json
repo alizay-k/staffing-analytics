@@ -1,0 +1,19 @@
+{
+  "generated_date": "2026-06-26",
+  "overall_avg_days": 29.0,
+  "avg_fee": 3792.06,
+  "cost_per_day": 130.98,
+  "best_country": "Pakistan",
+  "best_country_avg_days": 19.9,
+  "days_saved": 9.1,
+  "sourcing_roi_8pct": 375004.0,
+  "recruiter_roi": 31176.0,
+  "total_roi": 406180.0,
+  "negative_roi_countries": [
+    "Philippines",
+    "Kenya",
+    "Nigeria"
+  ],
+  "negative_roi_total_loss": 437450.0,
+  "highest_fee_country": "India"
+}

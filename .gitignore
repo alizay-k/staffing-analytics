@@ -16,3 +16,6 @@ Thumbs.db
 
 # Power BI — too large for GitHub
 *.pbix
+
+# Generated reports — created fresh each run
+reports/
