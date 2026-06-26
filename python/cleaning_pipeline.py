@@ -116,6 +116,7 @@ print(df['fee_category'].value_counts())
 df.to_csv("data/clean/placements_clean.csv", index=False)
 
 
+
 # Load clients and recruiters clean files
 clients = pd.read_csv("data/clean/clients_clean.csv")
 recruiters = pd.read_csv(
