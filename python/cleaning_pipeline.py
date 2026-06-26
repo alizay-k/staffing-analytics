@@ -60,6 +60,14 @@ print(f"\nJob title formats before: {before_titles}")
 print(f"Job title formats after: {after_titles}")
 print(df['job_title'].value_counts())
 
+before_rows = len(df)
+df = df.drop_duplicates()
+after_rows = len(df)
+
+print(f"\nRows before dedup: {before_rows}")
+print(f"Rows after dedup: {after_rows}")
+print(f"Duplicates removed: {before_rows - after_rows}")
+
 before_missing=df['placement_fee'].isnull().sum()
 df['placement_fee']=df.groupby('job_title')['placement_fee'].transform(
     lambda x:x.fillna(x.median())
@@ -71,13 +79,7 @@ print(f"Missing fees after: {after_missing}")
 print(f"\nMedian fee by job title:")
 print(df.groupby('job_title')['placement_fee'].median().round(2))
 
-before_rows = len(df)
-df = df.drop_duplicates()
-after_rows = len(df)
 
-print(f"\nRows before dedup: {before_rows}")
-print(f"Rows after dedup: {after_rows}")
-print(f"Duplicates removed: {before_rows - after_rows}")
 
 print("\n=== AFTER CLEANING ===")
 print(f"Shape: {df.shape}")
