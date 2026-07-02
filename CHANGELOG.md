@@ -27,4 +27,19 @@ Shifting 8% of non-Pakistan sourcing → $336,359
 estimated annual saving.
 
 ## [June 27, 2026]
-- Completed SQL sections 1-4 practice
+
+### SQL Practice Progress
+- Completed SQL Sections 1-6 on CSV Fiddle
+- Sections 1-4: SELECT, WHERE, ORDER BY, 
+  GROUP BY, aggregations — minimal mistakes
+- Section 5: HAVING vs WHERE — understood
+  the difference between filtering rows (WHERE)
+  and filtering groups (HAVING)
+- Section 6: JOINs — in progress
+- Practice files added to sql/practice/
+
+### Note on commit gap (June 24-27)
+- SQL practice done on CSV Fiddle externally
+- Code now committed retroactively
+- Going forward: commit daily regardless
+  of where practice happens
