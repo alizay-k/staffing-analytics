@@ -19,3 +19,7 @@ Thumbs.db
 
 # Generated reports — created fresh each run
 reports/
+
+# Google Cloud credentials — NEVER push these
+credentials/
+*.json
