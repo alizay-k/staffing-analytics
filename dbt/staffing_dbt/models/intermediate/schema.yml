@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_placements_joined
+    description: "Intermediate model joining placements with client and recruiter details"
+    columns:
+      - name: placement_id
+        description: "Unique placement identifier"
+        tests:
+          - unique
+          - not_null
+      - name: client_name
+        description: "Cleaned client company name"
+      - name: recruiter_name
+        description: "Cleaned recruiter name"
+      - name: seniority
+        description: "Recruiter seniority level"
+      - name: recruiter_country
+        description: "Recruiter's base country"

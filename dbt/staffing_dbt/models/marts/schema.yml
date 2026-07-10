@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: rpt_country_profitability
+    description: "Country sourcing efficiency and ROI analysis.
+                  Pakistan finding: 9.1 days faster = $375k saving"
+    columns:
+      - name: candidate_country
+        description: "Standardized country name"
+        tests:
+          - not_null
+
+  - name: rpt_recruiter_ranking
+    description: "Recruiter revenue ranking using RANK() window function"
+    columns:
+      - name: recruiter_id
+        description: "Recruiter identifier"
+        tests:
+          - not_null
+
+  - name: rpt_roi_analysis
+    description: "Full ROI calculation per country at 8% sourcing shift"
+    columns:
+      - name: candidate_country
+        description: "Country being evaluated"
+        tests:
+          - not_null
+
+  - name: rpt_time_to_fill
+    description: "Average fill time and revenue per job title"
+
+  - name: rpt_top_clients
+    description: "Top clients by total revenue generated"

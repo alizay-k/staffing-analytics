@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: staffing
+    database: elegant-hope-500014-d2
+    schema: staffing
+    description: "Raw staffing agency data loaded to BigQuery"
+    tables:
+      - name: placements_raw
+        description: "Raw placement records — messy, uncleaned"
+      - name: clients_raw
+        description: "Client company records"
+      - name: recruiters_raw
+        description: "Recruiter records"
+
+models:
+  - name: stg_placements
+    description: "Cleaned placements — standardized countries, job titles, dates"
+    columns:
+      - name: placement_id
+        description: "Unique placement identifier — primary key"
+        tests:
+          - unique
+          - not_null
+      - name: candidate_country
+        description: "Standardized country — pak/PK/Pakistan all become Pakistan"
+        tests:
+          - not_null
+
+  - name: stg_clients
+    description: "Cleaned client records — trimmed whitespace, parsed dates"
+    columns:
+      - name: client_id
+        description: "Unique client identifier — primary key"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_recruiters
+    description: "Cleaned recruiter records — trimmed whitespace, parsed dates"
+    columns:
+      - name: recruiter_id
+        description: "Unique recruiter identifier — primary key"
+        tests:
+          - unique
+          - not_null
