@@ -9,6 +9,7 @@ with placements as (
 
 select 
     client_name,
+    industry,
     count(placement_id) as placement_count,
     round(avg(placement_fee_imputed),0) as avg_fee,
     round(sum(placement_fee_imputed),0) as total_revenue
